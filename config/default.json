@@ -1,0 +1,14 @@
+{
+    "mySQL":{
+        "credentials":{
+            "host" : "63.33.172.234",
+            "username" : "guest",
+            "dataBase" : "tradair",
+            "password" : "GHE3FJU",
+            "port" : 3554
+        }
+    },
+    "serverSettings":{
+        "port":3000
+    }
+}
