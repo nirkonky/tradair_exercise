@@ -25,6 +25,9 @@ tradair.controller('indexController', ['$scope','$http','$window', function($sco
     //change the graph height and width via the submit button
     $scope.graphHeightAndWidth = function(){
         $scope.chart.setSize($scope.graphWidth, $scope.graphHeight);
+        $scope.dragChartStyle["height"] = $scope.graphHeight;
+        $scope.dragChartStyle["width"] = $scope.graphWidth;
+        
     }
 
     //drag start event listener
@@ -146,7 +149,9 @@ tradair.controller('indexController', ['$scope','$http','$window', function($sco
                 }]
             }
         });
-        $scope.chart.setSize($window.localStorage.size);
+        if($window.localStorage.size){
+            $scope.chart.setSize($window.localStorage.size);
+        }
 
     }
 

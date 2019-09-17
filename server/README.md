@@ -26,7 +26,7 @@ Docker 19
 ## Running the project
 
     $ docker run -p 49160:3000 -d <your username>/node-web-app
-    $ now you can access the server via localhost:49160
+    $ now you can access the server via http://localhost:49160/
 
 - #### If you need to go inside the container use command
 

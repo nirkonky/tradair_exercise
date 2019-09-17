@@ -2,11 +2,8 @@ const db = require('../models/db');
 let currencyPairsRatesModal = require('../models/currencyPairsRatesModel');
 const getCurrencyPairsRates = async function(){
     try {
-        console.log('im here@!');
-        var currencyModel = new currencyPairsRatesModal(db);
-        console.log(currencyModel);
+        const currencyModel = new currencyPairsRatesModal(db);
         const result = await currencyModel.getCurrencyPairsRatesModel();
-        console.log(result);
         if(result.error){
             return {error:true,message:'Server Error',statusCode:500};
         }

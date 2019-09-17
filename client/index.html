@@ -20,21 +20,19 @@
 
     <body id="bodyID" ng-app="tradair" ng-controller="indexController">
 
-        
         <aside draggable="true" id="dragme" ng-style="dragChartStyle" ng-show="!showError">
-            <div id="container" ng-style="graphWidthAndHeight" ></div>
+            <div id="container" ng-style="graphWidthAndHeight"></div>
+
+            <div id="changeGraphWidthAndHeightDiv">
+                width:<input type="text" ng-model="graphWidth">
+                height:<input type="text" ng-model="graphHeight">
+                <button ng-click="graphHeightAndWidth()">Submit</button>
+            </div>
 
             <div id="button-bar">
                 <button id="small" ng-click="redrawChart('small')">Small</button>
                 <button id="large" ng-click="redrawChart('large')">Large</button>
                 <button id="auto" ng-click="redrawChart('auto')">Auto</button>
-            </div>
-
-
-            <div>
-                width:<input type="text" ng-model="graphWidth">
-                height:<input type="text" ng-model="graphHeight">
-                <button ng-click="graphHeightAndWidth()">Submit</button>
             </div>
 
         </aside>
