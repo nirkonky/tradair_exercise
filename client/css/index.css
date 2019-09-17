@@ -1,0 +1,37 @@
+#container {
+	min-width: 310px;
+	max-width: 800px;
+    margin: 0 auto;
+}
+
+#button-bar {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.graphWidthHeight{
+    width: 40%;
+}
+
+#bodyID{
+    width:100%;
+    height:100%;
+}
+
+aside { 
+    position:  absolute;
+    left: 0;
+    top: 0; 
+    height: 400px;
+	min-width: 310px;
+	max-width: 800px;
+    background: rgba(255,255,255,0.66); 
+    border: 2px  solid rgba(0,0,0,0.5); 
+    border-radius: 4px; padding: 8px;
+}
+
+#changeGraphWidthAndHeightDiv{
+    margin-top:3%;
+}

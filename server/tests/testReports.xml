@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.007" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-09-16T19:46:16" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Currency Pairs Rates Model" timestamp="2019-09-16T19:46:16" tests="5" file="C:\NirProjects\tradair_exercise\server\tests\tests.js" failures="0" time="0.007">
+    <testcase name="Currency Pairs Rates Model generate new query to check if return arguments is currect" time="0.006" classname="generate new query to check if return arguments is currect">
+    </testcase>
+    <testcase name="Currency Pairs Rates Model generate new query to check if return 2 arguments is currect" time="0" classname="generate new query to check if return 2 arguments is currect">
+    </testcase>
+    <testcase name="Currency Pairs Rates Model generate new query to check if return 3 arguments is currect" time="0" classname="generate new query to check if return 3 arguments is currect">
+    </testcase>
+    <testcase name="Currency Pairs Rates Model generate new query to check if return multiple dates on 1 currency name" time="0.001" classname="generate new query to check if return multiple dates on 1 currency name">
+    </testcase>
+    <testcase name="Currency Pairs Rates Model generate new query to check if return multiple dates on 2 currency name" time="0" classname="generate new query to check if return multiple dates on 2 currency name">
+    </testcase>
+  </testsuite>
+</testsuites>

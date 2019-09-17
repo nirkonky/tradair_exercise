@@ -1,0 +1,47 @@
+<html >
+    <head>
+        <!--CSS-->
+        <link rel= "stylesheet" href= "css/index.css">
+
+        <!--Angular libraries-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ngDraggable/0.1.11/ngDraggable.js"></script>
+        <!--Angular Controllers-->
+        <script src="controllers/indexController.js"></script>
+
+        <!--Helper Libraries-->
+        <!--High Charts-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    </head>
+
+    <body id="bodyID" ng-app="tradair" ng-controller="indexController">
+
+        <aside draggable="true" id="dragme" ng-style="dragChartStyle" ng-show="!showError">
+            <div id="container" ng-style="graphWidthAndHeight"></div>
+
+            <div id="changeGraphWidthAndHeightDiv">
+                width:<input type="text" ng-model="graphWidth">
+                height:<input type="text" ng-model="graphHeight">
+                <button ng-click="graphHeightAndWidth()">Submit</button>
+            </div>
+
+            <div id="button-bar">
+                <button id="small" ng-click="redrawChart('small')">Small</button>
+                <button id="large" ng-click="redrawChart('large')">Large</button>
+                <button id="auto" ng-click="redrawChart('auto')">Auto</button>
+            </div>
+
+        </aside>
+            
+
+    </body>
+
+    <div id="dragme" ng-show="showError">
+            {{errorMessage}}
+
+        </div>
+</html>
