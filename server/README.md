@@ -1,6 +1,6 @@
-# overwolf
+# tradair
 
-A Interview questions for nir konky overwolf
+A Interview questions for nir konky tradair
 
 ## Requirements
 
